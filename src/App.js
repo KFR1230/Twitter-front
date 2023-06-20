@@ -42,7 +42,7 @@ function App() {
   const basename= process.env.PUBLIC_URL
 
   return (
-    <>
+    <div className="app">
       <BrowserRouter basename={basename}>
         <AuthProvider>
           <PageLayout>
@@ -91,7 +91,7 @@ function App() {
           </PageLayout>
         </AuthProvider>
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 
