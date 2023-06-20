@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Twitter-front/static/css/main.2152f8e9.chunk.css",
-    "main.js": "/Twitter-front/static/js/main.92b25a96.chunk.js",
-    "main.js.map": "/Twitter-front/static/js/main.92b25a96.chunk.js.map",
+    "main.js": "/Twitter-front/static/js/main.47b792cd.chunk.js",
+    "main.js.map": "/Twitter-front/static/js/main.47b792cd.chunk.js.map",
     "runtime-main.js": "/Twitter-front/static/js/runtime-main.8d1cb979.js",
     "runtime-main.js.map": "/Twitter-front/static/js/runtime-main.8d1cb979.js.map",
     "static/css/2.67b60acb.chunk.css": "/Twitter-front/static/css/2.67b60acb.chunk.css",
@@ -32,6 +32,6 @@
     "static/css/2.67b60acb.chunk.css",
     "static/js/2.8962530b.chunk.js",
     "static/css/main.2152f8e9.chunk.css",
-    "static/js/main.92b25a96.chunk.js"
+    "static/js/main.47b792cd.chunk.js"
   ]
 }
