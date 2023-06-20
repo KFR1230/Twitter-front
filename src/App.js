@@ -39,9 +39,11 @@ function App() {
   // const [modalProOpen, setModalProOpen] = useState(false);
   // const [modalTweetOpen, setModalTweetOpen] = useState(false);
 
+  const basename= process.env.PUBLIC_URL
+
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename={basename}>
         <AuthProvider>
           <PageLayout>
             <Routes>
