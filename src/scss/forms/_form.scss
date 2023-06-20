@@ -1,0 +1,237 @@
+/* @group [form] ----------------------------------------------------------------------------------------*/
+/* 選單區塊 */
+.form_group {
+  width: 100%;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  padding: 10px 0px;
+}
+
+/* form_group寬度 */
+.form_group_100 {
+  width: 100%;
+}
+
+.formLayout {
+  min-width: 360px;
+
+  &.setting-form {
+    padding: 24px;
+  }
+}
+
+.input-group-container {
+  padding: 2px 0px 4px 0px;
+  margin-bottom: 8px;
+
+  .input_group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    background-color: #f5f8fa;
+
+    label {
+      padding: 0 16px;
+      font-size: 14px;
+      line-height: 22px;
+      // height: 22px;
+      color: var(--gray-80);
+    }
+
+    input {
+      border-radius: 0;
+      border-bottom: 2px solid #657786;
+      width: 100%;
+      line-height: 26px;
+      padding-left: 16px;
+
+      &.error {
+        border-bottom: 2px solid red;
+        &:hover {
+          border-bottom: 2px solid red;
+        }
+        &:focus {
+          border-bottom: 2px solid red;
+        }
+      }
+      &:hover {
+        border-bottom: 2px solid var(--primary-color);
+      }
+      &:focus {
+        border-bottom: 2px solid var(--primary-color);
+      }
+    }
+  }
+
+  .error-message-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--main-white);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--gray-80);
+    height: 24px;
+    span.error {
+      margin-top: 2px;
+      color: var(--error-color);
+      min-height: 1.2rem;
+    }
+    .limit-num {
+      margin-left: auto;
+    }
+  }
+}
+
+.textarea-group-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  .textarea-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #f5f8fa;
+    label {
+      padding: 0 16px;
+      font-size: 14px;
+      line-height: 22px;
+      color: var(--gray-80);
+    }
+    textarea {
+      width: 100%;
+      border-radius: 0;
+      border-bottom: 2px solid #657786;
+      line-height: 26px;
+      padding-left: 16px;
+      height: 97px;
+      resize: none;
+
+      &.error {
+        border-bottom: 2px solid red;
+        &:hover {
+          border-bottom: 2px solid red;
+        }
+        &:focus {
+          border-bottom: 2px solid red;
+        }
+      }
+    }
+  }
+  .error-message-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--main-white);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--gray-80);
+    height: 24px;
+    .limit-num {
+      margin-left: auto;
+    }
+  }
+}
+
+/* End  [@form ] ----------------------------------------------------------------------------------------*/
+
+/* @[LoginForm] - 無label 透明樣式 ----------------------------------------------------------------------------------------*/
+
+.login-container {
+  display: flex;
+}
+
+/* End  [@LoginForm ] ----------------------------------------------------------------------------------------*/
+
+/* @[TweetCardForm] - 無label 透明樣式 ----------------------------------------------------------------------------------------*/
+.tweet-form-wrapper {
+  padding: var(--padding-s) var(--padding-m);
+  border-bottom: 10px solid var(--main-border);
+  .tweet-card-form {
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+    }
+    .error {
+      margin-right: 24px;
+      color: var(--error-color);
+    }
+  }
+}
+
+.form-group-inner-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  // height: auto;
+  min-height: 86px;
+  height: auto;
+  .textarea-group-container {
+    width: 100%;
+    padding: 4px 0px 4px 0px;
+    margin-bottom: 8px;
+  }
+  .grow-wrap {
+    display: grid;
+    width: 100%;
+    textarea {
+      padding: 2px;
+      resize: none;
+      overflow-y: auto;
+      height: 72px;
+    }
+  }
+  // .grow-wrap > textarea,
+  // .grow-wrap::after {
+  //   //@ test border
+  //   // border: 1px solid black;
+  //   padding: 0.5rem;
+  //   font: inherit;
+  //   grid-area: 1 / 1 / 2 / 2;
+  //   // height: 180px;
+  // }
+
+  .tweet-text-area {
+    width: 100%;
+  }
+}
+
+/* End  [@TweetCardForm ] ----------------------------------------------------------------------------------------*/
+
+/* @[RegisterForm] ----------------------------------------------------------------------------------------*/
+.register-form {
+  .button-group-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    .button-link {
+      margin-top: var(--margin-s);
+    }
+  }
+}
+
+/* End  [@RegisterForm ] ----------------------------------------------------------------------------------------*/
+
+/* @[Modal Form] ----------------------------------------------------------------------------------------*/
+.modal-info-form {
+  margin-top: 75px;
+  padding: 16px;
+}
+
+/* End  [@RegisterForm ] ----------------------------------------------------------------------------------------*/

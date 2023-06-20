@@ -1,0 +1,28 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 75px;
+  border-bottom: 1px solid var(--main-border);
+
+  &.header-main {
+    padding: 0 var(--padding-m);
+  }
+
+  .icon-back {
+    display: block;
+    padding: 16px;
+    // height: 100%;
+    // margin-right: var(--margin-s);
+  }
+
+  .header-user-info {
+    // margin-left: var(--margin-s);
+
+    p {
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 19px;
+    }
+  }
+}

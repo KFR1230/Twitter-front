@@ -1,0 +1,34 @@
+//import css
+@import './core/reset.scss';
+@import './core/variables';
+@import './core/basic.scss';
+//bootstrap grid
+@import 'bootstrap/dist/css/bootstrap-grid.min.css';
+@import 'animate.css';
+@import './layout/layout.scss';
+@import './forms/form.scss';
+@import './basic/tab.scss';
+@import './basic/nav.scss';
+@import './basic/header.scss';
+@import './basic/followCardList.scss';
+@import './basic/followShip.scss';
+@import './basic/profileCard.scss';
+@import './basic/profileMiniCard.scss';
+@import './basic/modal.scss';
+@import './basic/tweetBigCard.scss';
+//page
+@import './admin/adminPages.scss';
+
+//import RWD
+@import './core/media.scss';
+
+//import google fonts
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
+// fonts for numbers
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+//import Component Custom Css
+// @import '../components/Header/Header.module.scss';
+// @import '../components/StepProgressBar/StepProgressBar.module.scss';

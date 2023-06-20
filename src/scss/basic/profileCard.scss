@@ -1,0 +1,76 @@
+// profile card 共用 UserAvatar 但尺寸較大
+
+.profile-card {
+  position: relative;
+  margin-bottom: var(--margin-s);
+  .avatar {
+    //@這裡不能點擊，設定滑鼠為default
+    cursor: default;
+    position: absolute;
+    top: 124px;
+    left: var(--margin-s);
+    z-index: 3;
+    img {
+      width: 140px;
+      height: 140px;
+      border: 4px solid var(--main-white);
+    }
+  }
+
+  .profile-info {
+    width: 100%;
+    position: relative;
+    // margin-top: 72px;
+    padding: 8px var(--padding-s);
+  }
+  .profile-btn-group {
+    padding-top: var(--padding-s);
+    padding-right: var(--padding-s);
+
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .profile-info {
+    .user-name {
+    }
+    .user-account {
+      font-size: 14px;
+      line-height: 22px;
+      color: var(--secondary-color);
+    }
+    .user-desc {
+      font-size: 14px;
+      line-height: 22px;
+      color: var(--gray-100);
+    }
+  }
+  .user-follow-info {
+    width: 100%;
+    display: flex;
+    padding: 0 16px;
+    p {
+      font-size: 14px;
+      line-height: 22px;
+      color: var(--gray-100);
+      margin-right: 20px;
+      span {
+        color: var(--secondary-color);
+      }
+    }
+  }
+}
+
+//@寫在外面因為有其他元件共用 UserBk
+.profile-bk-clip {
+  z-index: 1;
+  // overflow: hidden;
+  width: 100%;
+  height: 200px;
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+}

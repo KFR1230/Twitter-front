@@ -1,0 +1,57 @@
+.TweetPage{
+  min-width: 639px;
+.TweetBigCard{
+  margin-top:16px;
+  .TweetUserInfo{
+    margin: 0px 21px 16px 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--main-border);
+    .TweetUserInfo-head {
+        display: flex;
+        & .avatar {
+          margin-bottom: 8px;
+        }
+    
+      }
+    
+      .tweet-card-basic-description {
+        margin: 0px 24px 8px 0px;
+        color: var(--gray-100)
+      }
+    
+      .tweetDate {
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--secondary-color);
+      }
+    .TweetUserInfo-replies,
+    .TweetUserInfo-likes{
+      font-family: 'Montserrat';
+      font-weight: 700;
+      font-size: 19px;
+      color: var(--gray-100);
+      margin-right: 24px;
+      & span {
+        font-family: 'Montserrat';
+        color: var(--secondary-color);
+      }
+    }
+
+  }
+  .tweet-card-icon-count{
+    width: 158px;
+    display: flex;
+    justify-content: space-between;
+     & img{
+      filter: var(--secondary-color);
+      &.active{
+        filter: var(--icon-like-color);
+      }
+    }
+    .tweet-card-reply-count,
+    .tweet-card-like-count {
+      cursor: pointer;
+    }
+  }
+}
+}

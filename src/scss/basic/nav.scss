@@ -1,0 +1,114 @@
+nav {
+  width: 178px;
+  height: 100%;
+  // layout test border
+  // border: 1px solid teal;
+  &.left-nav {
+    padding-right: 12px;
+  }
+  img.icon-logo {
+    margin: 8px;
+  }
+  .left-nav-link {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .left-nav-link-items {
+      width: 100%;
+    }
+    a {
+      display: flex;
+      // flex-wrap: wrap;
+      width: 100%;
+      padding: 16px;
+      margin-bottom: 8px;
+      // font-weight: 700;
+      // font-size: 18px;
+
+      &.link-logo {
+        padding: 0px;
+        width: 50px;
+        height: 50px;
+        // border: 1px solid pink;
+        margin-top: var(--margin-s);
+        .icon-logo {
+          padding: 5px;
+          margin: 0;
+        }
+      }
+      .nav-icon {
+        margin-right: 20px;
+      }
+
+      p {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+      }
+
+      &:has(.active) {
+        filter: var(--icon-main-color);
+        // color: teal;
+      }
+
+      //Eva不會改
+      // &.active {
+      //   filter: var(--icon-main-color);
+      //   .icon-home {
+      //     background-image: url('../../assets/images/icon/home-filled.svg');
+      //   }
+      // }
+    }
+
+    .left-nav-link-logout {
+      width: 100%;
+    }
+
+    .icon-home {
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      background-image: url(../../assets/images/icon/home.svg);
+      &.active {
+        background-image: url(../../assets/images/icon/home-filled.svg);
+      }
+    }
+
+    .icon-user {
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      background-image: url(../../assets/images/icon/user.svg);
+
+      &.active {
+        background-image: url(../../assets/images/icon/user-filled.svg);
+      }
+    }
+
+    .icon-setting {
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      background-image: url(../../assets/images/icon/setting.svg);
+
+      &.active {
+        background-image: url(../../assets/images/icon/setting-filled.svg);
+      }
+    }
+
+    .icon-logout {
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      background-image: url(../../assets/images/icon/logout.svg);
+    }
+    .button-filled{
+      .button-tweet-view{
+        color: var(--main-white);
+      }
+    }
+}
+}

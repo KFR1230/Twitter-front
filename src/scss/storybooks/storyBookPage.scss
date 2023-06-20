@@ -1,0 +1,17 @@
+.storybook-layout {
+  width: 100%;
+  height: 100vh;
+  //@ overflow settings for page scroll
+  overflow-y: visible;
+  overflow-x: hidden;
+}
+
+.storybook-container {
+  width: 100%;
+  .page-sec-title {
+    margin: 18px;
+  }
+  .comp-container > * {
+    margin-bottom: 18px;
+  }
+}

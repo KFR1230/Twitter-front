@@ -1,0 +1,42 @@
+.follow-list-container {
+  min-width: 273px;
+  background: var(--gray-20);
+  border-radius: 16px;
+  margin-top: 16px;
+  overflow: hidden;
+  // FollowCardList
+    .follow-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-width: 273px;
+      height: 82px;
+      padding: 16px;
+      & .follow-card-info{
+        display: flex;
+        & .tweet-username-2 {
+            max-width: 83px;
+            margin-right: 3px;
+        
+            & .user-name,
+            .user-account {
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+            }
+          }
+      }
+    }
+}
+
+.title-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 75px;
+  border-bottom: 1px solid var(--main-border);
+  // padding: $padding-l;
+  padding: 0 var(--padding-m);
+}
+

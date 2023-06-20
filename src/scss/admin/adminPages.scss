@@ -1,0 +1,10 @@
+.admin-user-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: var(--padding-s);
+  .profile-mini-card {
+    margin: 8px;
+  }
+}

@@ -1,0 +1,234 @@
+.modal-outer-container {
+  //@要看modal樣式的話把display:block
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 30;
+
+  &.modal-transparent-bk {
+    background: #17172540;
+  }
+
+  .modal-flex-box {
+    width: 100%;
+    height: 100%;
+    //@ 定位modal
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    position: relative;
+  }
+}
+
+.modal-container {
+  width: 634px;
+  min-height: 300px;
+  //@ test border
+  // border: 5px solid teal;
+  background: var(--main-white);
+  border-radius: 14px;
+  position: absolute;
+  left: calc(50% - 367px);
+  top: 56px;
+  overflow: hidden;
+  .modal-content {
+    width: 100%;
+    height: auto;
+    position: relative;
+
+    //@ 若modal內容太大，需要設定最高高度的話，內容overflow時捲動
+    // max-height: 500px;
+    // overflow-y: auto;
+    // overflow-x: hidden;
+    .profile-bk-clip {
+      width: 100%;
+      height: 200px;
+    }
+
+    .profile-bk-wrapper {
+      position: relative;
+      .icon-camera {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        margin-right: 24px;
+        cursor: pointer;
+        margin-top: -12px;
+      }
+      .icon-close {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        margin-right: -24px;
+        filter: var(--icon-white-color);
+        margin-top: -12px;
+        cursor: pointer;
+      }
+      input {
+        display: none;
+      }
+    }
+    .avatar-edit-wrapper {
+      width: 100%;
+      //@ test border
+      // border: 1px solid;
+      position: absolute;
+      top: 124px;
+      padding-left: 16px;
+      height: 140px;
+
+      .avatar {
+        position: absolute;
+        // top: 124px;
+        // left: var(--margin-s);
+        width: 140px;
+        height: 140px;
+        .user-avatar {
+          width: 140px;
+          height: 140px;
+          border: 4px solid var(--main-white);
+        }
+      }
+      .icon-camera {
+        // padding: 16px;
+        cursor: pointer;
+        position: absolute;
+        left: 75px;
+        z-index: 10;
+        bottom: 60px;
+      }
+      input {
+        display: none;
+      }
+    }
+  }
+  .modal-reply-content {
+    //ReplyModal
+    .tweet-form-wrapper {
+      border-bottom: none;
+    }
+    .tweet-card-basic {
+      padding: var(--padding-s) var(--padding-m);
+      margin: 0px;
+      border-bottom: 0px;
+    }
+    .tweet-card-basic-description {
+      position: relative;
+
+      &::after {
+        content: '';
+        height: 200%;
+        border: 1px solid var(--gray-60);
+        position: absolute;
+        left: -34px;
+        top: 30px;
+      }
+    }
+  }
+}
+
+// ModalHeader component
+.modal-header {
+  width: 100%;
+  height: 56px;
+  padding: 16px;
+  border-bottom: 1px solid var(--main-border);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  .icon-close {
+    margin-right: 32px;
+    cursor: pointer;
+    padding: 8px;
+  }
+
+  &.modal-header-with-btn {
+    h5 {
+      width: 100%;
+    }
+  }
+}
+
+//modalProfile
+.modal-info-form {
+  .input-group-container {
+    .input_group input {
+      &:hover {
+        border-bottom: 2px solid var(--primary-color);
+      }
+      &:focus {
+        border-bottom: 2px solid var(--primary-color);
+      }
+      &.error {
+        border-bottom: 2px solid var(--error-color);
+        &:hover {
+          border-bottom: 2px solid var(--error-color);
+        }
+        &:focus {
+          border-bottom: 2px solid var(--error-color);
+        }
+      }
+    }
+  }
+
+  .textarea-group-container {
+    .textarea-group textarea {
+      &.error {
+        border-bottom: 2px solid var(--error-color);
+        &:hover {
+          border-bottom: 2px solid var(--error-color);
+        }
+        &:focus {
+          border-bottom: 2px solid var(--error-color);
+        }
+      }
+      &:hover {
+        border-bottom: 2px solid var(--primary-color);
+      }
+      &:focus {
+        border-bottom: 2px solid var(--primary-color);
+      }
+    }
+    .error {
+      color: var(--error-color);
+    }
+  }
+}
+
+//modalTweet
+.modal-container {
+  .modal-content {
+    &.modal-tweet-content {
+      .tweet-form-wrapper {
+        border-bottom: none;
+        height: auto;
+        .form-group-inner-wrapper {
+          min-height: 171px;
+          .grow-wrap {
+            min-height: 146px;
+          }
+        }
+        .avatar {
+          position: relative;
+          top: unset;
+          left: unset;
+          .user-avatar {
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+  .modal-tweet-content {
+    textarea {
+      resize: none;
+      overflow-y: auto;
+      height: 160px;
+    }
+  }
+}
