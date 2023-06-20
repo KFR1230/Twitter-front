@@ -82,6 +82,7 @@ const MainPage = ({ setModalTweetOpen }) => {
   // @ 頁面首次載入 /api/tweets,並且modalTweetOpen 也觸發渲染
   useEffect(() => {
     getTweetsAsync();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [like, modalTweetOpen]);
 
   //@ 這一頁的驗證身份放最上面,currentMember好像比較不會出錯

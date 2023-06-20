@@ -65,6 +65,7 @@ const AdminPage = () => {
   useEffect(() => {
     //@ 呼叫 /api/tweets
     getAllTweetsAsync();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {

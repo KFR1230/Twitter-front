@@ -228,7 +228,8 @@ const Modal = () => {
   //@ 首次載入profile
   useEffect(() => {
     getUserInfoAsync();
-  }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[]);
 
   // @ 首次載入因profile 帳號出不來form要reset
   useEffect(() => {
