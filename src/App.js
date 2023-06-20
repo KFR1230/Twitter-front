@@ -41,7 +41,6 @@ function App({ router }) {
 
   return (
     <>
-      {' '}
       <BrowserRouter>
         <AuthProvider>
           <PageLayout>
