@@ -16,7 +16,7 @@ const AdminPage = () => {
 
   const navigate = useNavigate();
   const { isAuthentic } = useAuth(); // 取出需要的狀態與方法
-  const [isTweetsLoaded, setIsTweetsLoaded] = useState(false); // 用來防止tweets-loop產生
+  const [ setIsTweetsLoaded] = useState(false); // 用來防止tweets-loop產生
 
   // @ 頁面首次載入 /api/admin /tweets
   const getAllTweetsAsync = async () => {
@@ -33,7 +33,7 @@ const AdminPage = () => {
   const handleDeleteUserTweet = async (id) => {
     let text = '是否確認要刪除？';
 
-    if (window.confirm(text) == true) {
+    if (window.confirm(text) === true) {
       // console.log('You pressed OK!');
       try {
         // console.log({ tweetId });

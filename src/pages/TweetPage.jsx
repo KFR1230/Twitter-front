@@ -3,7 +3,7 @@ import ContainerColSec from '../components/layout/ContainerColSec';
 import { HeaderUser } from '../components/basic/Header';
 import TweetBigCard from '../components/basic/TweetBigCard';
 import { useEffect, useState } from 'react';
-import { getTweet, getTweetReplies, likeTweet, unlikeTweet } from '../api/twitter';
+import { getTweet, getTweetReplies } from '../api/twitter';
 import TweetRepliesList from '../components/user/TweetRepliesList';
 import { useAuth } from '../components/context/AuthContext';
 import { useNavigate, useParams } from 'react-router-dom';
@@ -22,7 +22,7 @@ const TweetPage = ({ setModalTweetOpen }) => {
   const [tweetReplies, setTweetReplies] = useState([]);
   //這裡很奇怪只有他 要先設定一樣的結構
 
-  const { isAuthentic, member,modalReplyOpen,setTweetId,handleChangeLikeMode,like, modalTweetOpen} = useAuth();
+  const {  member,modalReplyOpen,setTweetId,handleChangeLikeMode,like, modalTweetOpen} = useAuth();
 
   const pathId = Number(useParams().id);
   const navigate = useNavigate();
@@ -44,6 +44,7 @@ const TweetPage = ({ setModalTweetOpen }) => {
       }
     };
     getTweetAsync();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathId,like, modalTweetOpen]);
 
 
@@ -57,6 +58,7 @@ const TweetPage = ({ setModalTweetOpen }) => {
       }
     };
     getTweetRepliesAsync();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [modalReplyOpen]);
 
   return (

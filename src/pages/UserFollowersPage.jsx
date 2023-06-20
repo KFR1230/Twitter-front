@@ -25,7 +25,7 @@ const UserFollowersPage = ({ setModalProOpen, setModalTweetOpen }) => {
   const [userInfo, setUserInfo] = useState({});
 
   //@ profileCard 渲染後端 userInfo
-  const [pathId, setPathId] = useState(Number(useParams().id));
+  const [pathId] = useState(Number(useParams().id));
   useEffect(() => {
     const getUserInfoAsync = async () => {
       try {
@@ -36,6 +36,7 @@ const UserFollowersPage = ({ setModalProOpen, setModalTweetOpen }) => {
       }
     };
     getUserInfoAsync();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {

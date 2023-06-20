@@ -69,6 +69,7 @@ const FollowerShipLists = ({ tabIndex, pathId }) => {
     };
     getUserFollowerAsync();
     getUserFollowingAsync();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [userIsFollowing]);
 
   return (

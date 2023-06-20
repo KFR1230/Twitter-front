@@ -10,7 +10,7 @@ import TweetLists from '../components/user/TweetsLists';
 import TweetCardForm from '../components/forms/TweetCardForm';
 import { HeaderMain } from '../components/basic/Header';
 
-import { getTweets, likeTweet, unlikeTweet, createTweet } from '../api/twitter';
+import { getTweets, createTweet } from '../api/twitter';
 
 import { getUserInfo } from '../api/userinfo';
 import { useAuth } from '../components/context/AuthContext';
@@ -30,7 +30,7 @@ const MainPage = ({ setModalTweetOpen }) => {
     handleChangeLikeMode,
     like,
   } = useAuth(); // 取出需要的狀態與方法
-  const [isTweetsLoaded, setIsTweetsLoaded] = useState(false); // 用來防止tweets-loop產生
+  const [setIsTweetsLoaded] = useState(false); // 用來防止tweets-loop產生
 
   const handleClickCard = ({ userId }) => {
     userId === profile.id
@@ -77,6 +77,7 @@ const MainPage = ({ setModalTweetOpen }) => {
       }
     };
     getUserInfoAsync();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // @ 頁面首次載入 /api/tweets,並且modalTweetOpen 也觸發渲染

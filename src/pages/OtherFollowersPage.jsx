@@ -23,7 +23,7 @@ const OthersFollowersPage = ({ setModalProOpen, setModalTweetOpen }) => {
   // @串接 local-server 用這一個
   const [userInfo, setUserInfo] = useState({});
   const [userIsFollowing, setUserIsFollowing] = useState(0);
-  const [pathId, setPathId] = useState(Number(useParams().id));
+  const [pathId] = useState(Number(useParams().id));
   //@ profileCard 渲染後端 userInfo
   useEffect(() => {
     const getUserInfoAsync = async () => {
@@ -35,6 +35,7 @@ const OthersFollowersPage = ({ setModalProOpen, setModalTweetOpen }) => {
       }
     };
     getUserInfoAsync();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {

@@ -37,6 +37,7 @@ const ModalReply = () => {
       }
     };
     getTweetAsync();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -49,6 +50,7 @@ const ModalReply = () => {
       }
     };
     getUserInfoAsync();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

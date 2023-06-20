@@ -41,6 +41,7 @@ const ModalTweet = ({ handleAddTweets }) => {
       }
     };
     getUserInfoAsync();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <>

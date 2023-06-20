@@ -109,6 +109,7 @@ const SettingForm = () => {
       setSettingInfo(data);
     };
     getSettingInfoAsync();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [setSettingInfo]);
 
   useEffect(() => { 

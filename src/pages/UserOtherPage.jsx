@@ -25,7 +25,7 @@ const UserOtherPage = ({ setModalProOpen, setModalTweetOpen }) => {
   //向後端 給予(pathid)參數 拿該用戶的資料
   //分別建立一個state儲存tweets like replies資料 若state有資料便不抓取新資料 除非重整頁面
   const navigate = useNavigate();
-  let { state } = useLocation(); //@接收前一頁LINK頁面的state值
+  // let { state } = useLocation(); //@接收前一頁LINK頁面的state值
   const {
     isAuthentic,
     member,
