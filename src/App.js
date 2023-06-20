@@ -4,7 +4,8 @@ import {
   // BrowserRouter as Router,
   // Link,
   Routes,
-  Route
+  Route,
+  BrowserRouter
 } from 'react-router-dom';
 
 //import css
@@ -40,18 +41,20 @@ function App({ router }) {
 
   return (
     <>
+      {' '}
+      <BrowserRouter>
         <AuthProvider>
           <PageLayout>
             <Routes>
-              <Route path='*' element={<LoginPage />}></Route>
-              <Route path='/storybook' element={<StoryBookPage />}></Route>
-              <Route path='/login' element={<LoginPage />}></Route>
-              <Route path='/login/admin' element={<AdminLoginPage />}></Route>
-              <Route path='/admin' element={<AdminPage />}></Route>
-              <Route path='/register' element={<RegisterPage />}></Route>
-              <Route path='/main' element={<MainPage />}></Route>
+              <Route path="*" element={<LoginPage />}></Route>
+              <Route path="/storybook" element={<StoryBookPage />}></Route>
+              <Route path="/login" element={<LoginPage />}></Route>
+              <Route path="/login/admin" element={<AdminLoginPage />}></Route>
+              <Route path="/admin" element={<AdminPage />}></Route>
+              <Route path="/register" element={<RegisterPage />}></Route>
+              <Route path="/main" element={<MainPage />}></Route>
               <Route
-                path='/user/:id'
+                path="/user/:id"
                 element={
                   <UserPage
                   // setModalProOpen={setModalProOpen}n
@@ -59,7 +62,7 @@ function App({ router }) {
                 }
               ></Route>
               <Route
-                path='/other/:id'
+                path="/other/:id"
                 element={
                   <UserOtherPage
                   // setModalProOpen={setModalProOpen}
@@ -68,7 +71,7 @@ function App({ router }) {
               ></Route>
 
               <Route
-                path='/user/followers/:id'
+                path="/user/followers/:id"
                 element={
                   <UserFollowersPage
                   // setModalProOpen={setModalProOpen}
@@ -76,17 +79,18 @@ function App({ router }) {
                 }
               ></Route>
               <Route
-                path='/other/followers/:id'
+                path="/other/followers/:id"
                 element={<OtherFollowersPage />}
               ></Route>
-              <Route path='/main/tweet/:id' element={<TweetPage />}></Route>
-              <Route path='/setting' element={<SettingPage />}></Route>
-              <Route path='/admin/users' element={<AdminUsers />}></Route>
-              <Route path='/main/self2' element={<NestedUserPage />}></Route>
+              <Route path="/main/tweet/:id" element={<TweetPage />}></Route>
+              <Route path="/setting" element={<SettingPage />}></Route>
+              <Route path="/admin/users" element={<AdminUsers />}></Route>
+              <Route path="/main/self2" element={<NestedUserPage />}></Route>
               {/* <Route path='/photo' element={<PhotoPage />}></Route> */}
             </Routes>
           </PageLayout>
         </AuthProvider>
+      </BrowserRouter>
     </>
   );
 }
