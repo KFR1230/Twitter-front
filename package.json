@@ -24,7 +24,8 @@
     "react-scripts": "^4.0.3",
     "sass": "^1.62.1",
     "sweetalert2": "^11.7.12",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "webpack": "^4.43.0"
   },
   "scripts": {
     "start": "react-scripts start",
