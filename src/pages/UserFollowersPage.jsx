@@ -13,7 +13,7 @@ import FollowerShipLists from '../components/user/FollowerShipLists';
 import FollowCardList from '../components/user/FollowCardList';
 // import { getUserTweets } from '../api/twitter';
 
-const UserFollowersPage = ({ setModalProOpen, setModalTweetOpen }) => {
+const UserFollowersPage = ({ setModalProOpen}) => {
   const [tabIndex, setTabIndex] = useState('0');
   // const pathId = Number(useParams()); //取得網址
   //向後端 給予(pathid)參數 拿該用戶的資料
