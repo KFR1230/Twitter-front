@@ -103,12 +103,12 @@ $screen-break-point: 992px;
 //@手機版 991以下
 @media screen and (max-width: $screen-phone-point) {
   .container-fluid{
-    height: calc(100% - 100px);
+    height: 100svh;
   }
   .container-fluid .wrapper {
     padding: 0px;
     max-width: none;
-    height: calc(100% - 100px);
+    
   }
   .container_one .col-4 {
     width: 100%;
