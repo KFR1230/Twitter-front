@@ -102,9 +102,6 @@ $screen-break-point: 992px;
 
 //@手機版 991以下
 @media screen and (max-width: $screen-phone-point) {
-  html,body{
-    height: -webkit-fill-available;
-  }
   .container-fluid .wrapper {
     padding: 0px;
     max-width: none;
@@ -179,7 +176,7 @@ $screen-break-point: 992px;
       }
 
       //@ user-left-nav => RWD時需特別安排
-      &.user-left-nav {
+      & .left-nav-link {
         .left-nav-link-items {
           width: 100%;
           display: flex;
