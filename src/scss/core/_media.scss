@@ -121,7 +121,7 @@ $screen-break-point: 992px;
   .container-fluid .col-7 {
     transition-duration: 0.1s;
     width: 100%;
-    height: calc(100% - 52px);
+    height: calc(100% - 102px);
     padding: 0;
   }
 
@@ -130,8 +130,10 @@ $screen-break-point: 992px;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: flex-end;
-
+    position: relative;
     nav.left-nav.col-2 {
+      position: fixed;
+      bottom: 52px;
       width: 100vw;
       height: 52px;
       border-top: 1px solid;
