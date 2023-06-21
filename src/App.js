@@ -40,14 +40,6 @@ function App() {
   // const [modalTweetOpen, setModalTweetOpen] = useState(false);
   const basename= process.env.PUBLIC_URL
 
-  const appHeight = () => {
-    const doc = document.documentElement;
-    doc.style.setProperty('--app-height', `${window.innerHeight}px`);
-  };
-  window.addEventListener('resize', appHeight);
-  appHeight(); 
-
-
   return (
     <div className="app">
       <BrowserRouter basename={basename}>
