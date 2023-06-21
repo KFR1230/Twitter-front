@@ -1,6 +1,7 @@
 // 大螢幕 break point
 $screen-extra-break-point: 1200px;
 // ipad break point
+$screen-phone-point: 991px;
 $screen-break-point: 992px;
 
 @media screen and (max-width: $screen-break-point) {
@@ -96,6 +97,158 @@ $screen-break-point: 992px;
   .modal-container {
     width: 610px;
     left: calc(50% - 300px);
+  }
+}
+
+//@手機版 991以下
+@media screen and (max-width: $screen-phone-point) {
+  html,body{
+    height: -webkit-fill-available;
+  }
+  .container-fluid .wrapper {
+    padding: 0px;
+    max-width: none;
+  }
+  .container_one .col-4 {
+    width: 100%;
+    padding: 0 24px;
+    .page-title {
+      width: 100%;
+      text-align: center;
+    }
+    .formLayout {
+      width: 100%;
+    }
+  }
+
+  .container-fluid .col-7 {
+    transition-duration: 0.1s;
+    width: 100%;
+    height: calc(100% - 52px);
+    padding: 0;
+  }
+
+  .container_sec {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-end;
+
+    nav.left-nav.col-2 {
+      width: 100vw;
+      height: 52px;
+      border-top: 1px solid;
+      .left-nav-link {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+
+      //@ admin-nav => RWD時需特別安排
+      &.admin-left-nav {
+        .left-nav-link-items {
+          width: 66%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          a {
+            width: 33%;
+            padding: 16px;
+            width: 100%;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &.link-logo {
+              display: none;
+            }
+          }
+        }
+        .left-nav-link-logout {
+          width: 33%;
+          a {
+            width: 100%;
+            padding: 16px;
+            width: 100%;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+
+      //@ user-left-nav => RWD時需特別安排
+      &.user-left-nav {
+        .left-nav-link-items {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          a {
+            width: 100%;
+            padding: 16px;
+            width: 100%;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &.link-logo {
+              display: none;
+            }
+          }
+          button {
+            width: 100%;
+            padding: 16px;
+            width: 100%;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: none;
+            filter: none;
+          }
+          .button-filled.button-lg .button-tweet-view-m {
+            filter: none;
+          }
+        }
+        .left-nav-link-logout {
+          display: none;
+        }
+      }
+    }
+    .section-outer-l {
+      height: calc(100% - 52px);
+      width: 100%;
+    }
+  }
+
+  .section-right {
+    display: none;
+  }
+
+  //modal
+  .modal-container {
+    width: 90%;
+    left: calc(50% - 45%);
+    .formLayout {
+      min-width: auto;
+      width: 100%;
+    }
+  }
+
+  //settingPage log out
+  .setting-form {
+    .left-nav-link-logout {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+
+  //adminUserPage
+  .admin-user-wrapper {
+    justify-content: center;
   }
 }
 
