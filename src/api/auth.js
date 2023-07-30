@@ -7,7 +7,7 @@ const baseUrl = 'http://localhost:3004/api`';
 
 export const login = async ({ account, password }) => {
   try {
-    const { data } = await axios.post(`${baseUrl}/api/signin`, {
+    const { data } = await axios.post(`${baseUrl}/signin`, {
       account,
       password, //解構拿出data
     });
