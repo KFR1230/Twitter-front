@@ -1,7 +1,7 @@
 import axios from 'axios';
-// const baseUrl = 'http://localhost:3004';
+const baseUrl = 'http://localhost:3004/api';
 
-const baseUrl = 'https://calm-eyrie-50498.herokuapp.com/api';
+// const baseUrl = 'https://calm-eyrie-50498.herokuapp.com/api';
 // const baseUrl = 'https://agile-forest-26034.herokuapp.com/api';
 
 const axiosInstance = axios.create({
