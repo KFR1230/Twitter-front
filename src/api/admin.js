@@ -1,5 +1,5 @@
 import axios from 'axios';
-const baseUrl = 'http://localhost:3004/api';
+const baseUrl = 'http://52.195.171.214:3000/api';
 
 // const baseUrl = 'https://calm-eyrie-50498.herokuapp.com/api';
 // const baseUrl = 'https://agile-forest-26034.herokuapp.com/api';

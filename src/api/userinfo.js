@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseUrl = 'http://localhost:3004/api';
+const baseUrl = 'http://52.195.171.214:3000/api';
 // const baseUrl = 'https://confused-lamb-teddy.cyclic.app';
 // const baseUrl = 'https://agile-forest-26034.herokuapp.com/api';
 
