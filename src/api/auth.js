@@ -3,7 +3,7 @@ import axios from 'axios';
 // const baseUrl = 'http://52.195.171.214:3000/api';
 // const baseUrl = 'https://confused-lamb-teddy.cyclic.app';
 // const baseUrl = 'https://agile-forest-26034.herokuapp.com/api';
-const baseUrl = 'https://twitter-api-2023-suua.onrender.com';
+const baseUrl = 'https://twitter-api-2023-suua.onrender.com/api';
 
 export const login = async ({ account, password }) => {
   try {
